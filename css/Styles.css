@@ -1,0 +1,178 @@
+/*File made by: Isacc Fisk*/
+
+/*reset*/
+body, header, nav, main,footer,h1, div, img, ul, article{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/*image & body*/
+
+body{
+	background-color: #000;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+	border: 2px solid #fff;
+}
+
+/*universal box size*/
+*{
+	box-sizing: border-box;
+}
+
+/*Header*/
+Header{
+	text-align: center;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+header h1{
+	font-family: 'Georama', sans-serif;
+}
+
+/*mobile*/
+
+/*Nav*/
+nav{
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li{
+	font-size: 1.5em;
+	font-family: 'Georama', sans-serif;
+	border-top: 1px solid #fff;
+}
+
+nav li:first-child{
+	border-top: none;
+}
+
+nav li a{
+	display: block;
+	color: #fff;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/*mobile veiw*/
+.mobile{
+	display: block;
+}
+
+.tab-desk{
+	display: none;
+}
+
+/*main*/
+main{
+	background-color: #71797E;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'Georama', sans-serif;
+}
+
+article{
+	padding: 2%;
+}
+
+article h3{
+	text-align: center;
+}
+
+article ul{
+	margin-left: 10%;
+}
+
+/*Syle rules - footer*/
+footer p{
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+
+footer p a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/*tab*/
+@media screen and (min-width: 630px), print{
+	/*tab-desk veiw*/
+	.tab-desk{
+		display: block;
+	}
+	
+	.mobile{
+		display: none;
+	}
+	
+	/*nav*/
+	nav li{
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+	}
+	
+	nav li:last-child{
+		border-right: none;
+	}
+	
+	nav li a{
+		padding: 0.1em 0.75em;
+	}
+	
+	/*main*/
+	aside{
+		text-align: center;
+		font-size: 1.25em;
+		font-style: italic;
+		font-weight: bold;
+		padding: 2%;
+		background-color: rgba(204, 204, 204, 0.5);
+		box-shadow: 5px 5px 8px #000;
+	}
+	
+	aside ul{
+	margin-left: 10%;
+	}
+
+}
+
+/*desk*/
+@media screen and (min-width:1015px), print{
+	main{
+		clear: left;
+	}
+	
+	main h1{
+		font-size: 1.8em;
+	}
+	
+	article h3{
+		font-size: 1.75em;
+	}
+	
+}
+
+/*media print query*/
+@media print{
+	
+	body{
+		background: #fff;
+		color: #000;
+	}
+	
+}
